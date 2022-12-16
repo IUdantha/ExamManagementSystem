@@ -1,0 +1,75 @@
+CREATE TABLE `exammanagement`.`quizdetails` (
+  `qid` INT NOT NULL AUTO_INCREMENT,
+  `faculty` VARCHAR(45) NOT NULL,
+  `year` VARCHAR(45) NOT NULL,
+  `mcode` VARCHAR(45) NOT NULL,
+  `noQ` INT NOT NULL,
+  `enrollKey` VARCHAR(45) NOT NULL,
+  `quizPass` VARCHAR(45) NOT NULL,
+  quiz_table_namescol VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`qid`));
+
+
+
+
+CREATE TABLE `exammanagement`.`studentmarks` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `sid` VARCHAR(45) NOT NULL,
+  `qType` VARCHAR(45) NOT NULL,
+  `marks` INT NOT NULL,
+  PRIMARY KEY (`id`));
+
+
+
+
+CREATE TABLE `exammanagement`.`timetable` (
+  `ttID` INT NOT NULL AUTO_INCREMENT,
+  `faculty` VARCHAR(45) NOT NULL,
+  `year` VARCHAR(5) NOT NULL,
+  `filename` VARCHAR(200) NOT NULL unique,
+  PRIMARY KEY (`ttID`)
+  );
+
+Create table exammanagement.userT(
+
+    id int Primary key  AUTO_INCREMENT,
+    name varchar(50),
+    NIC varchar(15) Unique,
+    phone varchar(10),
+    email varchar(30),
+    username varchar(30) unique,
+    password varchar(30),
+    type varchar(30)
+);
+
+
+CREATE TABLE `exammanagement`.`seat` (
+  `saID` INT NOT NULL AUTO_INCREMENT,
+  `faculty` VARCHAR(45) NOT NULL,
+  `year` VARCHAR(5) NOT NULL,
+  `filename` VARCHAR(200) NOT NULL unique,
+  PRIMARY KEY (`saID`)
+  );
+  
+
+
+  CREATE TABLE `exammanagement`.`inquiry` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `number` VARCHAR(45) NOT NULL,
+  `faculty` VARCHAR(45) NOT NULL,
+  `year` VARCHAR(45) NOT NULL,
+  `inquirytype` VARCHAR(45) NOT NULL,
+  `message` VARCHAR(250) NOT NULL,
+  `filename` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`)
+  );
+
+  CREATE TABLE `exammanagement`.`examiner` (
+  `exID` INT NOT NULL AUTO_INCREMENT,
+  `faculty` VARCHAR(45) NOT NULL,
+  `year` VARCHAR(5) NOT NULL,
+  `filename` VARCHAR(200) NOT NULL unique,
+  PRIMARY KEY (`exID`)
+  );
