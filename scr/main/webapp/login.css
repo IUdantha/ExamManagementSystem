@@ -1,0 +1,96 @@
+@charset "ISO-8859-1";
+:root {
+  --theme-blue: #003566;
+  --theme-yellow: #f0d895;
+}
+
+body{
+	background-image: url('imgs/back.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.login-box {
+  padding: 1rem;
+  width: 30%;
+  margin: auto;
+  background-color: white;
+}
+.login-box .heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.login-box button {
+  width: 100%;
+  background-color: var(--theme-blue);
+  color: white;
+  padding: 0.5rem;
+  margin: 0.2rem 0 0.2rem 0;
+  cursor: pointer;
+}
+.login-box button:hover {
+  background-color: white;
+  color: var(--theme-blue);
+  font-weight: bold;
+}
+.login-box,
+.login-box button {
+  border: var(--theme-blue) 1px solid;
+  font-family: Roboto, sans-serif;
+}
+.form-input {
+  margin: 1rem 0 1rem 0;
+}
+.form-input input {
+  padding: 0.5rem;
+  width: 100%;
+}
+.form-input label {
+  line-height: 2rem;
+}
+.login-box .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0 1rem 0;
+}
+.login-box a {
+  text-decoration: none;
+  color: var(--theme-blue);
+}
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+.userType {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+/* .form-errors {
+  padding: 0rem 1rem 1rem 1rem;
+} */
+
+#error-list li {
+  color: red;
+  list-style: disc;
+}
+@media screen and (max-width: 768px) {
+  .login-box {
+    width: 50%;
+    margin-right: auto;
+  }
+  .login-box .row {
+    display: block;
+  }
+  .login-box .row div {
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .login-box {
+    width: 100%;
+    margin: auto;
+  }
+}
