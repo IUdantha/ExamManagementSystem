@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "proxima_novaregular";
+    src: url("fonts/proxima_nova_font-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "sigvarregular";
+    src: url("fonts/sigvarregular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  :root {
+    --Sigvar: "sigvarregular", serif;
+    --Proxima: "proxima-nova", "Open Sans", "Arial", "Helvetica", sans-serif;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  #lgo {
+    color: white;
+  }
+  
+  .logo {
+    align-items: center;
+    justify-content: center;
+    color: red;
+  }
+  
+  header {
+    font-family: var(--Sigvar);
+  }
+  
+  body {
+    font-family: var(--Proxima);
+    background-color: whitesmoke;
+    min-height: 100vh;
+ 
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: justify;
+    width: 100%;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    background-color: #003566;
+    padding: 0 20px 0 10px;
+    line-height: 50px;
+  }
+  .upnav {
+	display: flex;
+    padding: 0 10px 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005aad;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-weight: 500;
+    padding: 30px;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .menu a:hover {
+    color: #ffd60a;
+  }
+  
+  a {
+    text-decoration: none; /*removes underline*/
+  }
+  
+  ul {
+    list-style: none; /*removes bullet points*/
+  }
+  
+  #loginbtn {
+    font-family: "sigvarregular", serif;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease 0s;
+  }
+  #loginbtn:hover {
+    color: #ffd60a;
+  }
+  
+  .searchLogin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #searchbox {
+    width: 240px;
+    height: 38px;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 15px;
+    border-style: none;
+  }
+  .search-container {
+    display: flex;
+  }
+  .searchbox-container {
+    padding: 10px;
+  }
+  .sbtn-container {
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 14px;
+  }
+  
+  .bi-bell {
+    color: white;
+  }
+
+  .bi-person-circle{
+    color: white;
+  }
+  
+  .bi-box-arrow-right{
+    color: white;
+  }
+  .bi {
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 10px;
+  }
+
+  
+  #sbtn {
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+  }
+  #sbtn:hover {
+    color: #ffd60a;
+  }
+  .lgn {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* Content */
+:root {
+    --theme-blue: #003566;
+    --theme-yellow: #f0d895;
+  }
+  
+  .op-btn {
+    /* margin: 10% 25% 0 25%; */
+    padding: 12rem 2rem 2rem 2rem;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+    
+  }
+
+  .design-btn{
+    width:3000px;
+  }
+  	.op-background{
+					
+		background-image: url('imgs/study.jpg');
+		background-repeat: no-repeat;
+ 		padding-top: 2.5rem;
+ 		background-size: cover contain;
+		background-position: center;
+		height: 470px;
+		text-align: center;
+		font-size: 26px;
+		color: #191970;
+	}
+  
+  .op-btn button {
+    width: 100%;
+    background-color: var(--theme-blue);
+    color: white;
+    padding: 0.5rem;
+    margin: 0.2rem 0 0.2rem 0;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  .op-btn button:hover {
+    background-color: white;
+    color: var(--theme-blue);
+    font-weight: bold;
+  }
+  
+  .op-btn button {
+    border: var(--theme-blue) 1px solid;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .timetable{
+      font-size: 100px;
+  }
+  a
+  .seat{
+      font-size: 100px;
+      /* color:white; */
+  }
+  
+  .result{
+      font-size: 100px;
+  }
+  
